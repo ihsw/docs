@@ -1,10 +1,10 @@
-Installation
-============
+# Installing Nginx
 
-Packages
---------
+## Installation
 
-#) Install as such:
+### Packages
+
+1. Install as such:
 
     # apt-get install nginx
 
@@ -12,10 +12,9 @@ Packages
 
 Nginx doesn't usually start after installation.
 
-Configuration
--------------
+### Configuration
 
-#) Edit ``/etc/nginx/sites-enabled/default`` to have some variant of the following location blocks:
+1. Edit `/etc/nginx/sites-enabled/default` to have some variant of the following location blocks:
 
     location / {
         try_files $uri $uri/ =404;
@@ -30,13 +29,11 @@ Configuration
 
 Where `fastcgi_pass` leads to either a unix or tcp socket, preferably unix socket for double-plus good security.
 
-Testing
-=======
+## Testing
 
-Functionality Verification
---------------------------
+### Functionality Verification
 
-#) Run the following command:
+1. Run the following command:
 
     # curl -s localhost | grep -i 'welcome to nginx'
 
@@ -44,16 +41,13 @@ Functionality Verification
 
     <center><h1>Welcome to nginx!</h1></center>
 
-Management
-==========
+## Management
 
-Configuration Files
--------------------
+### Configuration Files
 
 * /etc/nginx/nginx.conf
 
-Log Files
----------
+### Log Files
 
 * /var/log/nginx/access.log
 
