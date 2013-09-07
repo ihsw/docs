@@ -1,25 +1,23 @@
-Graphite Installation
-===
+Installation
+============
 
-OS Packages
----
+Packages
+--------
 
-#) As always:
+#) Install as such:
 
-    $ apt-get update
+    # apt-get install python-pip python-cairo python-django python-django-tagging libapache2-mod-wsgi python-twisted python-memcache python-pysqlite2 python-simplejson memcached sqlite3 libsqlite3-dev
 
-#) Install packages:
-
-    $ apt-get install python-pip python-cairo python-django python-django-tagging libapache2-mod-wsgi python-twisted python-memcache python-pysqlite2 python-simplejson memcached sqlite3 libsqlite3-dev
-
-Software Installation
----
+    # pip install whisper carbon graphite-web
 
 #) Install via pip:
 
     $ pip install whisper carbon graphite-web
 
-#) Set configuration files in ``/opt/graphite/conf/``:
+Configuration
+-------------
+
+#) Set configuration files in `/opt/graphite/conf/`:
 
     $ cd /opt/graphite/conf/
 

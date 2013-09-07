@@ -15,7 +15,7 @@ Nginx doesn't usually start after installation.
 Configuration
 -------------
 
-#) Edit `/etc/nginx/sites-enabled/default` to have some variant of the following location blocks:
+#) Edit ``/etc/nginx/sites-enabled/default`` to have some variant of the following location blocks:
 
     location / {
         try_files $uri $uri/ =404;
