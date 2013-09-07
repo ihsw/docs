@@ -1,0 +1,34 @@
+[lower]
+pattern = \.lower$
+xFilesFactor = 0.1
+aggregationMethod = min
+
+[upper]
+pattern = \.upper$
+xFilesFactor = 0.1
+aggregationMethod = max
+
+[upper_90]
+pattern = \.upper_90$
+xFilesFactor = 0.1
+aggregationMethod = max
+
+[sum]
+pattern = \.sum$
+xFilesFactor = 0
+aggregationMethod = sum
+
+[sum_90]
+pattern = \.sum_90$
+xFilesFactor = 0
+aggregationMethod = sum
+
+[count]
+pattern = \.count$
+xFilesFactor = 0
+aggregationMethod = sum
+
+[default_average]
+pattern = .*
+xFilesFactor = 0.3
+aggregationMethod = average
