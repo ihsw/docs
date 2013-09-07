@@ -6,9 +6,9 @@
 
 1. Install as such:
 
-    # apt-get install nginx
+    $ apt-get install nginx
 
-    # service nginx start
+    $ service nginx start
 
 Nginx doesn't usually start after installation.
 
