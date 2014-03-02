@@ -24,6 +24,7 @@ Should result in:
     # munin node at node01
 
 Where you can now enter:
+
     fetch df
 
 Should result in:
