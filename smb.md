@@ -4,11 +4,16 @@
     # apt-get install samba
 
 ### Configuration
-Edit `$FILE` to have some variant of the following:
+Edit `/etc/samba/smb.conf` to have some variant of the following:
 
-    fdsfgs
-
-Lorem ipsum dolor sit amet.
+    [public]
+        path = /mnt/files
+        security = user
+        read only = no
+        available = yes
+        browseable = yes
+        public = yes
+        writable = yes
 
 ## Testing
 ### Functionality Verification
@@ -22,4 +27,4 @@ Run the following:
 * /etc/samba/smb.conf
 
 ### Log Files
-* $ANOTHER_FILE
+* /var/log/samba/log.smbd
