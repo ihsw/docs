@@ -6,21 +6,16 @@
 ### Configuration
 Edit `/etc/samba/smb.conf` to have some variant of the following:
 
+    [global]
+        security = user
+
     [public]
         path = /mnt/files
-        security = user
-        read only = no
-        available = yes
-        browseable = yes
         public = yes
-        writable = yes
-
-## Testing
-### Functionality Verification
-Run the following:
-
-    # echo 'jello, world!'
-    jello, world!
+        read only = no
+        writeable = yes
+        create mask = 0644
+        directory mask = 0755
 
 ## Management
 ### Configuration Files
